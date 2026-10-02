@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>น้องซัน iApp - My Website</title>
+
+    <!-- นำเข้าฟอนต์ Kanit จาก Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar สไตล์ Bootstrap มาตรฐาน -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="/">
+                <span>🌸</span>
+                <span>น้องซัน iApp</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/">หน้าแรก</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#likes-dislikes">สิ่งที่ชอบและไม่ชอบ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/article.html">อัลบั้มผลงาน</a>
+                    </li>
+                    <li class="nav-item ms-lg-2">
+                        <button class="btn btn-primary btn-sm rounded-pill px-3" data-bs-toggle="modal" data-bs-target="#contactModal">
+                            ติดต่อฉัน
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header / Hero Section ตามมาตรฐาน Bootstrap -->
+    <header class="bg-dark text-white text-center py-5 mb-5 shadow-sm">
+        <div class="container py-3">
+            <h1 class="display-4 fw-bold mb-3">น้องซัน iApp</h1>
+            <p class="lead mb-4 fs-4 text-light-50">
+                ฉันคือนักศึกษาน้องซันที่ชอบเขียนโปรแกรมเว็บไซต์ 🌸✨
+            </p>
+            <div class="d-flex justify-content-center gap-3">
+                <a href="#likes-dislikes" class="btn btn-primary btn-lg rounded-pill px-4">
+                    💖 ดูสิ่งที่ชอบและไม่ชอบ
+                </a>
+                <a href="/article.html" class="btn btn-warning btn-lg rounded-pill px-4">
+                    📸 ไปที่หน้าอัลบั้ม
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- เนื้อหาหลัก (Card & List Group มาตรฐาน Bootstrap) -->
+    <main class="container mb-5" id="likes-dislikes">
+        <div class="row mb-4 text-center">
+            <div class="col-12">
+                <h2 class="fw-bold text-primary mb-2">สิ่งที่ชอบและไม่ชอบ</h2>
+                <p class="text-secondary">รวบรวมความสนใจและไลฟ์สไตล์ของน้องซัน</p>
+            </div>
+        </div>
+
+        <div class="row g-4">
+            <!-- คอลัมน์: สิ่งที่ชอบ -->
+            <div class="col-md-6">
+                <div class="card shadow-sm h-100 border-0 rounded-4 overflow-hidden">
+                    <div class="card-header bg-primary text-white py-3 px-4 d-flex justify-content-between align-items-center">
+                        <h3 class="card-title h5 mb-0 fw-bold">💖 สิ่งที่ชอบ</h3>
+                        <span class="badge bg-light text-primary rounded-pill">5 รายการ</span>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item d-flex justify-content-between align-items-center py-3 px-4">
+                            <span>💻 ชอบการเขียนโปรแกรมเว็บไซต์</span>
+                            <span class="badge bg-primary-subtle text-primary rounded-pill">Coding</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center py-3 px-4">
+                            <span>🎮 ชอบการเล่นเกม</span>
+                            <span class="badge bg-primary-subtle text-primary rounded-pill">Gaming</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center py-3 px-4">
+                            <span>🎬 ชอบการดูหนัง</span>
+                            <span class="badge bg-primary-subtle text-primary rounded-pill">Movies</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center py-3 px-4">
+                            <span>🎵 ชอบการฟังเพลง</span>
+                            <span class="badge bg-primary-subtle text-primary rounded-pill">Music</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center py-3 px-4">
+                            <span>🏃 ชอบการออกกำลังกาย</span>
+                            <span class="badge bg-primary-subtle text-primary rounded-pill">Fitness</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- คอลัมน์: สิ่งที่ไม่ชอบ -->
+            <div class="col-md-6">
+                <div class="card shadow-sm h-100 border-0 rounded-4 overflow-hidden">
+                    <div class="card-header bg-warning text-dark py-3 px-4 d-flex justify-content-between align-items-center">
+                        <h3 class="card-title h5 mb-0 fw-bold">⭐ สิ่งที่ไม่ชอบ</h3>
+                        <span class="badge bg-dark text-warning rounded-pill">5 รายการ</span>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item d-flex justify-content-between align-items-center py-3 px-4">
+                            <span>💻 ไม่ชอบการเขียนโปรแกรมเว็บไซต์</span>
+                            <span class="badge bg-warning-subtle text-warning-emphasis rounded-pill">Coding</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center py-3 px-4">
+                            <span>🎮 ไม่ชอบการเล่นเกม</span>
+                            <span class="badge bg-warning-subtle text-warning-emphasis rounded-pill">Gaming</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center py-3 px-4">
+                            <span>🎬 ไม่ชอบการดูหนัง</span>
+                            <span class="badge bg-warning-subtle text-warning-emphasis rounded-pill">Movies</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center py-3 px-4">
+                            <span>🎵 ไม่ชอบการฟังเพลง</span>
+                            <span class="badge bg-warning-subtle text-warning-emphasis rounded-pill">Music</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center py-3 px-4">
+                            <span>🏃 ไม่ชอบการออกกำลังกาย</span>
+                            <span class="badge bg-warning-subtle text-warning-emphasis rounded-pill">Fitness</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal ติดต่อฉัน (Bootstrap JS Component) -->
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content rounded-4 border-0 shadow">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title fw-bold" id="contactModalLabel">🌸 ติดต่อน้องซัน iApp</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <p class="mb-2">ยินดีที่ได้รู้จักค่ะ! หากสนใจผลงานหรือต้องการพูดคุยเรื่องการเขียนเว็บไซต์ สามารถติดต่อได้เลยนะคะ ✨</p>
+                    <ul class="list-unstyled mb-0 mt-3">
+                        <li class="mb-2">📧 <strong>Email:</strong> sun@iapp.example</li>
+                        <li class="mb-2">💼 <strong>GitHub:</strong> github.com/sun-iapp</li>
+                        <li>📍 <strong>Role:</strong> Web Developer Student</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary rounded-pill" data-bs-dismiss="modal">ปิด</button>
+                    <button type="button" class="btn btn-primary rounded-pill" data-bs-dismiss="modal">รับทราบ</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer สไตล์ Bootstrap มาตรฐาน -->
+    <footer class="bg-dark text-white py-4 mt-auto border-top">
+        <div class="container text-center">
+            <p class="mb-1">© 2026 น้องซัน iApp • พัฒนาด้วย Bootstrap 5.3 + Vite บน Docker</p>
+            <small class="text-white-50">ธีมสีชมพู-เหลืองน่ารัก • ฟอนต์ Kanit</small>
+        </div>
+    </footer>
+
+    <!-- โหลด Bootstrap SCSS และ JavaScript ผ่าน Vite -->
+    <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
